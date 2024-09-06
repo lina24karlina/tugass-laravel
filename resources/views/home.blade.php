@@ -100,6 +100,15 @@
         <h1>Selamat Datang di Dunia Baru</h1>
         <p>Buatlah duniamu yang indah menjadi lebih indah</p>
         <a href="#" class="btn">Masuk</a>
+
+        <!-- Cek jika pesan ada -->
+    @if(isset($message))
+    <h1>Pesan dari form</h1>
+        <p>Pesan: {{ $message }}</p>
+    @else
+        <p>Tidak ada pesan yang dikirim.</p>
+    @endif
+
     </div>
 </body>
 </html>
