@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('model');
             $table->integer('tahun');
             $table->integer('price');
+            $table->integer("stok");
             $table->timestamps();
         });
     }
