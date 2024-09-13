@@ -36,7 +36,7 @@ class StoreController extends Controller
 
     public function show()
     {
-        $Products = Product::all();
+        $Products = Product::Paginate(3);
         return view("tableProduct", compact("Products"));
     }
     public function edit($id)
