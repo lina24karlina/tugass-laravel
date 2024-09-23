@@ -2,6 +2,7 @@
 
 use App\Http\RelasiControllers;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\PdfController;
 use App\Http\Controllers\RelasiController;
 use App\Http\Controllers\RumahController;
 use App\Http\Controllers\SchoolController;
@@ -36,3 +37,5 @@ Route::get('/pengguna/create', [RelasiController::class, 'create']);
 Route::post('/pengguna/store', [RelasiController::class, 'store']);
 Route::get('/school', [SchoolController::class, 'index']);
 Route::get('/sekolah', [SekolahController::class, 'index']);
+Route::get('/generate-pdf', [PdfController::class, 'generatePDF']);
+Route::get('/stream-pdf', [PdfController::class, 'streamPDF']);
